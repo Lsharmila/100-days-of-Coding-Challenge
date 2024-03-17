@@ -1,0 +1,14 @@
+class Solution{
+    static long evenlyDivides(long N){
+        long count=0;
+        long temp=N;
+        while(temp!=0){
+           long r=temp%10;
+            if(r!=0 && N%r==0){
+             ++count;
+            }
+            temp=temp/10;
+            
+        }return count;
+    }
+}
